@@ -14,6 +14,7 @@ O objetivo deste projeto é criar uma plataforma de documentação para consolid
 ## 📑 Índice de Conteúdos
 
 >* [Instalação](#-instalacao)
+>* [Fluxo de Trabalho](#-fluxo-de-trabalho)
 >* [Criando Branchs](#-criando-branchs)
 >* [Como Trabalhar em Branches](#-como-trabalhar-em-branches)
 >* [Regras de Estrutura de Diretorios](#-regras-de-estrutura-de-diretórios)
@@ -35,6 +36,18 @@ Para instalar o projeto, siga os seguintes passos:
    ```bash
    cd catolica-tech-academy-hub
    ```
+
+---
+
+## 🔄 Fluxo de Trabalho
+
+Nosso fluxo de trabalho segue o modelo **Feature Branch**, onde cada nova funcionalidade, modificação ou correção de bug é desenvolvida em uma branch separada:
+
+- **Para Funcionalidades:** `feature/adicionar-login`.
+- **Para Correções de Bugs:**  `bugfix/corrigir-erro-login`.
+- **Para Correções Críticas:** `hotfix/corrigir-falha-segurança`.
+- **Para Refatoração de Código:** `refactor/otimizar-funcao-busca`.
+- **Para Manutenção Geral:** `chore/atualizar-dependencias`.
 
 ---
 
