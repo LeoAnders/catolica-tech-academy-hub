@@ -1,6 +1,6 @@
 <div align="center">
   <h1> Cátolica Tech Academy Hub </h1>
-  <img src="https://github.com/user-attachments/assets/5f3a3457-a70a-42de-9a20-63d660ad9ef2" style="width: 200px;">
+  <img src="https://i.postimg.cc/nVv8LZwx/img-logo.png" style="width: 200px;">
 </div>
 
 ---
