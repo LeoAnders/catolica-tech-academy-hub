@@ -1,0 +1,15 @@
+.custom-navbar {
+    background-color: #622C2D !important; /* Cor de fundo desejada */
+}
+
+.navbar-logo {
+    padding-left: 15px;
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 50px; /* Ajuste para o tamanho máximo desejado */
+}
+
+.navbar-brand {
+    color: white !important; /* Cor do texto branca */
+    font-size: 1.25rem; /* Ajuste o tamanho da fonte, se necessário */
+}
+
