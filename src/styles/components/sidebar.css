@@ -16,13 +16,26 @@
   border-radius: 8px;
   overflow-y: auto;
   padding-top: 1.2rem;
+  padding-bottom: 5rem;
 }
 
-.title {
+.nav-group {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.border-active {
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+.container-title {
+  padding-left: 0.9rem;
+}
+
+.sidebar .title {
   color: var(--text-light-200);
   font-size: 0.9rem;
-  font-weight: bold;
-  padding-left: 1rem;
+  font-weight: 500;
 }
 
 .nav-item {
