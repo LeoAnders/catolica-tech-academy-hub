@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>C</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lógica de Programação em C</title>
+  <link rel="icon" href="/src/assets/images/icon-coruja.png" type="image/png">
   <!-- Link para o CSS do Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- Scripts Bootstrap -->
   <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -15,10 +16,169 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- Script sidebar -->
+  <script defer src="/src/scripts/sidebar.js"></script>
+  <!-- Link para css -->
+  <link rel="stylesheet" href="/src/styles/components/sidebar.css" />
+  <link rel="stylesheet" href="/src/styles/components/navbar.css">
+  <link rel="stylesheet" href="/src/styles/pages/c.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex align-items-center">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a href="/home.html" class="navbar-logo-link">
+            <img src="/src/assets/images/icon-coruja.png" alt="Logo" class="navbar-logo">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Docs
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item-container">
+              <a class="dropdown-item" href="./c.html">
+                Lógica de programação
+                <span class="dropdown-description">Aprenda Lógica de programação em C</span></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
+  <div class="sidebar">
+    <div class="nav-group border-active">
+      <div class="container-title">
+        <span class="title">INTRODUÇÃO</span>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" target="contentFrame">O que é
+            programação?</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Onde a programação é
+            utilizada?</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">O que é lógica de
+            programação?</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Importância de aprender lógica
+            antes de programar</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Exercícios básicos de lógica</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-group border-active">
+      <div class="container-title"><span class="title">LINGUAGEM DE PROGRAMAÇÃO C</span></div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">O que é a linguagem
+            C?</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">História e aplicação da
+            linguagem</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Estrutura básica de um programa
+            em C</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">O primeiro programa: "Hello,
+            World!"</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Exercícios básicos de lógica</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-group border-active">
+      <div class="container-title"><span class="title">CONCEITOS BÁSICOS DE PROGRAMAÇÃO</span></div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Operadores lógicos e
+            aritméticos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Variáveis e Tipos de Dados</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Declaração de variáveis</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Tipos de dados primitivos em
+            C</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Operações básicas</a>
+        </li>
+        <li class="nav-item">
+          <a href="./conteudo-teste/index6.html" class="nav-link" target="contentFrame">Comandos de Entrada e Saída
+            (I/O)</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-group border-active">
+      <div class="container-title"><span class="title">CONDICIONAIS</span></div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Estruturas condicionais:
+            if, else, else if</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Operadores relacionais e
+            lógicos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Aninhamento de condicionais</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Exemplo de uso em C</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Exercícios práticos</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-group">
+      <div class="container-title"><span class="title">LAÇOS DE REPETIÇÃO</span></div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Estruturas de repetição:
+            for, while, do-while</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Controle de loops com break e
+            continue</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Exemplo de laços de repetição em
+            C</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" target="contentFrame">Exercícios práticos</a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  <div class="content">
+    <iframe name="contentFrame" src="#" id="contentFrame"></iframe>
+  </div>
 </body>
 
 </html>

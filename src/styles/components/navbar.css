@@ -1,0 +1,58 @@
+:root {
+  --text-light-100: rgb(243, 243, 243);
+  --text-light-200: rgb(169, 169, 169);
+  --text-text-red-100: #ffbbbb;
+  --color-background-dark: #373b45d7;
+  --color-background-red: #622c2d;
+}
+
+.navbar {
+  background-color: #622c2d;
+}
+
+.navbar .nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar .navbar-logo {
+  height: auto;
+  max-height: 45px;
+  margin-left: 3rem;
+}
+
+.nav-link.dropdown-toggle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light-100);
+}
+
+.dropdown-menu {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1c1e21;
+  border: 0.5px solid var(--text-light-200);
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  display: block;
+  color: var(--text-light-100);
+  text-decoration: none;
+  border-left: 3px solid rgb(137, 7, 7);
+  border-radius: 5px;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(49, 49, 49);
+  color: var(--text-light-100);
+}
+
+.dropdown-description {
+  display: block;
+  color: var(--text-light-200);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
