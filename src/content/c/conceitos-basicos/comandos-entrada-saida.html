@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comandos de Entrada e Saída</title>
+    <title>Documentação de Comandos de Entrada e Saída em C</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <link rel="stylesheet" href="/src/styles/global.css">
 </head>
+
 <body>
-    
+
+    <h2>Comandos de Entrada e Saída em C</h2>
+
+    <p>A linguagem C oferece diversas funções para realizar operações de entrada (input) e saída (output), permitindo
+        que você leia e exiba dados. As funções mais utilizadas estão na biblioteca padrão stdio.h.</p>
+
+    <h3>Funções Principais:</h3>
+
+    <p><strong>1. printf()</strong>: Usada para exibir informações na tela (saída).</p>
+    <p>printf("formato", variáveis)</p>
+
+    <pre>
+        <code class="language-c">
+        
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            int idade = 25;
+            printf("Minha idade é %d anos\n", idade);
+            return 0;
+        }
+        </code>
+    </pre>
+
+    <h3>Saída:</h3>
+    <p>Minha idade é 25 anos</p>
+
+    <p><strong>2. scanf()</strong>: Usada para ler entradas do teclado (entrada).</p>
+    <p>scanf("formato", &variável);
+    </p>
+    <p>
+        include &lt;stdio.h&gt;
+
+        int main() {
+            int idade;
+            printf("Digite sua idade: ");
+            scanf("%d", &idade);
+            printf("Você tem %d anos\n", idade);
+            return 0;
+        }
+    </p>
+
+    <h3>Saída:</h3>
+    <p>Você tem 25 anos</p>
+
+    <h3>Formatos de Conversão Comuns:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Formato</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>%d</code></td>
+                <td>Inteiros (int)</td>
+            </tr>
+            <tr>
+                <td><code>%f</code></td>
+                <td>Números de ponto flutuante</td>
+            </tr>
+            <tr>
+                <td><code>%c</code></td>
+                <td>Caracteres (char)</td>
+            </tr>
+            <tr>
+                <td><code>%s</code></td>
+                <td>Strings (sequência de caracteres)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tratando Entradas e Saídas com Strings:</h3>
+
+    <p><strong>Exibindo Strings com printf():</strong></p>
+    <p>printf("Olá, %s!\n", "Gabriel");</p>
+
+    <h3>Saída:</h3>
+    <p>Olá, Gabriel!</p>
+
+    <p><strong>Lendo Strings com scanf():</strong></p>
+
+    <p>
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            char nome[50];
+            printf("Digite seu nome: ");
+            scanf("%s", nome);
+            printf("Olá, %s!\n", nome);
+            return 0;
+        }
+    </p>
+
+    <h3>Entrada:</h3>
+    <p>Gabriel</p>
+
+    <h3>Saída:</h3>
+    <p>Olá, Gabriel!</p>
+
+    <h3>Dicas Importantes:</h3>
+    <ul>
+        <li>Sempre use o &amp; (endereço) antes de variáveis ao usar scanf(), exceto para
+            strings.</li>
+        <li>O printf() e o scanf() são altamente customizáveis. Além dos formatos básicos,
+            você pode adicionar controle de precisão e largura, por exemplo: %5d alinha o número em 5
+            espaços.</li>
+    </ul>
+
+    <h3>Funções Adicionais:</h3>
+
+    <p><strong>1. gets() (não recomendada):</strong> Lê uma linha inteira de texto (string), mas é insegura
+        pois não verifica limites de buffer.</p>
+    <p>
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            char nome[50];
+            gets(nome);
+            printf("Nome: %s\n", nome);
+            return 0;
+        }
+    </p>
+
+    <p><strong>2. fgets():</strong> Substitui o gets() de forma mais segura, especificando o
+        número máximo de caracteres a serem lidos.</p>
+    <p>
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            char nome[50];
+            printf("Digite seu nome: ");
+            fgets(nome, 50, stdin);
+            printf("Nome: %s", nome);
+            return 0;
+        }
+    </p>
+
+    <h3>Saída:</h3>
+    <p>Nome: Gabriel</p>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
 </body>
+
 </html>
