@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  margin-left: 300px;
+  margin-left: 320px;
   height: 100vh;
   height: calc(100vh - 56px);
 }

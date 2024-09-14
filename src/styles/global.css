@@ -14,9 +14,13 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: var(--color-background-dark);
-  margin: 2rem;
   color: var(--text-light-100);
   margin-bottom: 4rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 /* Estilos para títulos,Subtítulos,Listas,Link e parágrafos */
@@ -32,6 +36,7 @@ h2 {
 
 p {
   color: var(--text-light-200);
+  max-width: 896px;
   font-size: 1rem;
 }
 
@@ -54,6 +59,7 @@ ol li {
 
 /* Estilo para o bloco aside no qual apresentamos exemplos e notas*/
 aside {
+  max-width: 896px;
   background-color: var(--color-background-dark-400);
   padding: 0.5rem;
   border-radius: 1rem;
@@ -81,7 +87,7 @@ pre code {
   box-shadow: 0 4px 4px #1d1e21;
 }
 
-/* Outros CSS*/
+/* Estilo de imagens*/
 img {
   display: block;
   margin: 0 auto;
