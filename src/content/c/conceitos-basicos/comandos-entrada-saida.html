@@ -11,20 +11,22 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <h2>Comandos de Entrada e Saída em C</h2>
+        <h2>Comandos de Entrada e Saída em C</h2>
 
-    <p>A linguagem C oferece diversas funções para realizar operações de entrada (input) e saída (output), permitindo
-        que você leia e exiba dados. As funções mais utilizadas estão na biblioteca padrão stdio.h.</p>
+        <p>A linguagem C oferece diversas funções para realizar operações de entrada (input) e saída (output),
+            permitindo
+            que você leia e exiba dados. As funções mais utilizadas estão na biblioteca padrão stdio.h.</p>
 
-    <aside>
-        <h3>Funções Principais:</h3>
+        <aside>
+            <h3>Funções Principais:</h3>
 
-        <p><strong>1. printf()</strong>: Usada para exibir informações na tela (saída).</p>
-        <p>printf("formato", variáveis)</p>
-    </aside>
+            <p><strong>1. printf()</strong>: Usada para exibir informações na tela (saída).</p>
+            <p>printf("formato", variáveis)</p>
+        </aside>
 
-    <pre>
+        <pre>
         <code class="language-c">
         
         #include &lt;stdio.h&gt;
@@ -40,17 +42,17 @@
         </code>
     </pre>
 
-    <h3>Saída:</h3>
+        <h3>Saída:</h3>
 
-    <pre><code class="language-c">Minha idade é 25 anos</code></pre>
+        <pre><code class="language-c">Minha idade é 25 anos</code></pre>
 
-    <aside>
-    <p><strong>2. scanf()</strong>: Usada para ler entradas do teclado (entrada).</p>
-    <p>scanf("formato", &variável);</p>
-    </aside>
+        <aside>
+            <p><strong>2. scanf()</strong>: Usada para ler entradas do teclado (entrada).</p>
+            <p>scanf("formato", &variável);</p>
+        </aside>
 
-    
-    <pre>
+
+        <pre>
         <code class="language-c">
         #include &lt;stdio.h&gt;
 
@@ -66,51 +68,53 @@
         }
         </code>
     </pre>
-    
-    <h3>Saída:</h3>
 
-    <pre><code class="language-c">Você tem 25 anos</code></pre>
+        <h3>Saída:</h3>
 
-    <h3>Formatos de Conversão Comuns:</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Formato</th>
-                <th>Descrição</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>%d</code></td>
-                <td>Inteiros (<code>int</code>)</td>
-            </tr>
-            <tr>
-                <td><code>%f</code></td>
-                <td>Números de ponto flutuante</td>
-            </tr>
-            <tr>
-                <td><code>%c</code></td>
-                <td>Caracteres (<code>char</code>)</td>
-            </tr>
-            <tr>
-                <td><code>%s</code></td>
-                <td>Strings (sequência de caracteres)</td>
-            </tr>
-        </tbody>
-    </table>
+        <pre><code class="language-c">Você tem 25 anos</code></pre>
 
-    <h3>Tratando Entradas e Saídas com Strings:</h3>
+        <h3>Formatos de Conversão Comuns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Formato</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>%d</code></td>
+                    <td>Inteiros (<code>int</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>%f</code></td>
+                    <td>Números de ponto flutuante</td>
+                </tr>
+                <tr>
+                    <td><code>%c</code></td>
+                    <td>Caracteres (<code>char</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>%s</code></td>
+                    <td>Strings (sequência de caracteres)</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <p><strong>Exibindo Strings com printf():</strong></p>
-    <pre><code class="language-c">printf("Olá, %s!\n", "Gabriel");</code></pre>
+        <h3>Tratando Entradas e Saídas com Strings:</h3>
 
-    <h3>Saída:</h3>
+        <p><strong>Exibindo Strings com printf():</strong></p>
+        <pre><code class="language-c">printf("Olá, %s!\n", "Gabriel");</code></pre>
 
-    <aside><p>Olá, Gabriel!</p></aside>
+        <h3>Saída:</h3>
 
-    <p><strong>Lendo Strings com scanf():</strong></p>
+        <aside>
+            <p>Olá, Gabriel!</p>
+        </aside>
 
-    <pre>
+        <p><strong>Lendo Strings com scanf():</strong></p>
+
+        <pre>
         <code class="language-c">
             #include &lt;stdio.h&gt;
 
@@ -124,26 +128,30 @@
         </code>
     </pre>
 
-    <h3>Entrada:</h3>
-    <aside><p>Gabriel</p></aside>
+        <h3>Entrada:</h3>
+        <aside>
+            <p>Gabriel</p>
+        </aside>
 
-    <h3>Saída:</h3>
-    <aside><p>Olá, Gabriel!</p></aside>
+        <h3>Saída:</h3>
+        <aside>
+            <p>Olá, Gabriel!</p>
+        </aside>
 
-    <h3>Dicas Importantes:</h3>
-    <ul>
-        <li>Sempre use o &amp; (endereço) antes de variáveis ao usar scanf(), exceto para
-            strings.</li>
-        <li>O printf() e o scanf() são altamente customizáveis. Além dos formatos básicos,
-            você pode adicionar controle de precisão e largura, por exemplo: %5d alinha o número em 5
-            espaços.</li>
-    </ul>
+        <h3>Dicas Importantes:</h3>
+        <ul>
+            <li>Sempre use o &amp; (endereço) antes de variáveis ao usar scanf(), exceto para
+                strings.</li>
+            <li>O printf() e o scanf() são altamente customizáveis. Além dos formatos básicos,
+                você pode adicionar controle de precisão e largura, por exemplo: %5d alinha o número em 5
+                espaços.</li>
+        </ul>
 
-    <h3>Funções Adicionais:</h3>
+        <h3>Funções Adicionais:</h3>
 
-    <p><strong>1. gets() (não recomendada):</strong> Lê uma linha inteira de texto (string), mas é insegura
-        pois não verifica limites de buffer.</p>
-    <pre>
+        <p><strong>1. gets() (não recomendada):</strong> Lê uma linha inteira de texto (string), mas é insegura
+            pois não verifica limites de buffer.</p>
+        <pre>
         <code class="language-c">
 
             #include &lt;stdio.h&gt;
@@ -159,9 +167,9 @@
         </code>
     </pre>
 
-    <p><strong>2. fgets():</strong> Substitui o gets() de forma mais segura, especificando o
-        número máximo de caracteres a serem lidos.</p>
-    <pre>
+        <p><strong>2. fgets():</strong> Substitui o gets() de forma mais segura, especificando o
+            número máximo de caracteres a serem lidos.</p>
+        <pre>
         <code>
         #include &lt;stdio.h&gt;
 
@@ -175,8 +183,12 @@
     </code>
     </pre>
 
-    <h3>Saída:</h3>
-    <aside><p>Nome: Gabriel</p></aside>
+        <h3>Saída:</h3>
+        <aside>
+            <p>Nome: Gabriel</p>
+        </aside>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>

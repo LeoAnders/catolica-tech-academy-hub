@@ -8,12 +8,10 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: var(--color-background-dark);
+  background-color: var(--color-background-dark-500);
   color: var(--text-light-100);
   margin-bottom: 4rem;
   margin: 0 auto;
@@ -21,6 +19,12 @@ body {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 896px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Estilos para títulos,Subtítulos,Listas,Link e parágrafos */
@@ -36,11 +40,9 @@ h2 {
 
 p {
   color: var(--text-light-200);
-  max-width: 896px;
   font-size: 1rem;
 }
 
-/* Estilo para os exemplos */
 span.bold {
   font-weight: bold;
 }
@@ -59,7 +61,6 @@ ol li {
 
 /* Estilo para o bloco aside no qual apresentamos exemplos e notas*/
 aside {
-  max-width: 896px;
   background-color: var(--color-background-dark-400);
   padding: 0.5rem;
   border-radius: 1rem;
@@ -85,6 +86,8 @@ aside p {
 pre code {
   border-radius: 1rem;
   box-shadow: 0 4px 4px #1d1e21;
+  display: block;
+  border: 1px solid #3b3f48;
 }
 
 /* Estilo de imagens*/
