@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentação de Comandos de Entrada e Saída em C</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
     <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 
@@ -44,11 +44,11 @@
         include &lt;stdio.h&gt;
 
         int main() {
-            int idade;
-            printf("Digite sua idade: ");
-            scanf("%d", &idade);
-            printf("Você tem %d anos\n", idade);
-            return 0;
+        int idade;
+        printf("Digite sua idade: ");
+        scanf("%d", &idade);
+        printf("Você tem %d anos\n", idade);
+        return 0;
         }
     </p>
 
@@ -97,11 +97,11 @@
         #include &lt;stdio.h&gt;
 
         int main() {
-            char nome[50];
-            printf("Digite seu nome: ");
-            scanf("%s", nome);
-            printf("Olá, %s!\n", nome);
-            return 0;
+        char nome[50];
+        printf("Digite seu nome: ");
+        scanf("%s", nome);
+        printf("Olá, %s!\n", nome);
+        return 0;
         }
     </p>
 
@@ -128,10 +128,10 @@
         #include &lt;stdio.h&gt;
 
         int main() {
-            char nome[50];
-            gets(nome);
-            printf("Nome: %s\n", nome);
-            return 0;
+        char nome[50];
+        gets(nome);
+        printf("Nome: %s\n", nome);
+        return 0;
         }
     </p>
 
@@ -141,22 +141,21 @@
         #include &lt;stdio.h&gt;
 
         int main() {
-            char nome[50];
-            printf("Digite seu nome: ");
-            fgets(nome, 50, stdin);
-            printf("Nome: %s", nome);
-            return 0;
+        char nome[50];
+        printf("Digite seu nome: ");
+        fgets(nome, 50, stdin);
+        printf("Nome: %s", nome);
+        return 0;
         }
     </p>
 
     <h3>Saída:</h3>
     <p>Nome: Gabriel</p>
 
-
+    <!-- highlight.js   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
     <script>hljs.highlightAll();</script>
-
 </body>
 
 </html>

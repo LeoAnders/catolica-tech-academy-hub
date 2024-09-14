@@ -1,10 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f9;
+:root {
+  --text-light-100: rgb(234, 234, 234);
+  --text-light-200: #d8d5d1;
+  --color-background-dark-400: #2a2e38;
+  --color-background-dark-500: #1c1e21;
 }
-h2 {
-    color: #333;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--color-background-dark);
+  margin: 2rem;
+  color: var(--text-light-100);
+}
+
+/* Estilos para títulos,Subtítulos e parágrafos */
+h1 {
+  color: var(--text-light-100);
+}
+
+p {
+  color: var(--text-light-200);
+}
+
+/* Estilo para o bloco aside no qual apresentamos exemplos e dicas*/
+aside {
+  background-color: var(--color-background-dark-400);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 4px #1d1e21;
+  border: 1px solid #3b3f48;
+}
+
+aside h4 {
+  margin-left: 1rem;
+}
+
+aside p {
+  margin-left: 1rem;
+}
+
+/* Estilo para o bloco de exemplos de código*/
+pre code {
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px #1d1e21;
 }
