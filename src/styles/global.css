@@ -2,7 +2,7 @@
 
 :root {
   --text-light-100: rgb(234, 234, 234);
-  --text-light-200: #d8d5d1;
+  --text-light-200: #e3e3e3;
   --color-background-dark-400: #2a2e38;
   --color-background-dark-500: #1c1e21;
 }
@@ -16,18 +16,43 @@ body {
   background-color: var(--color-background-dark);
   margin: 2rem;
   color: var(--text-light-100);
+  margin-bottom: 4rem;
 }
 
-/* Estilos para títulos,Subtítulos e parágrafos */
+/* Estilos para títulos,Subtítulos,Listas,Link e parágrafos */
 h1 {
   color: var(--text-light-100);
 }
 
-p {
-  color: var(--text-light-200);
+h2 {
+  color: var(--text-light-100);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* Estilo para o bloco aside no qual apresentamos exemplos e dicas*/
+p {
+  color: var(--text-light-200);
+  font-size: 1rem;
+}
+
+/* Estilo para os exemplos */
+span.bold {
+  font-weight: bold;
+}
+
+ul li {
+  margin: 0.6rem;
+}
+
+ol li {
+  margin: 0.5rem;
+}
+
+.link {
+  color: #60c7de;
+}
+
+/* Estilo para o bloco aside no qual apresentamos exemplos e notas*/
 aside {
   background-color: var(--color-background-dark-400);
   padding: 0.5rem;
@@ -38,6 +63,10 @@ aside {
   border: 1px solid #3b3f48;
 }
 
+.aside-note {
+  background-color: #22584e;
+}
+
 aside h4 {
   margin-left: 1rem;
 }
@@ -46,8 +75,16 @@ aside p {
   margin-left: 1rem;
 }
 
-/* Estilo para o bloco de exemplos de código*/
+/* Estilo para o bloco de exemplos de código em c*/
 pre code {
   border-radius: 1rem;
   box-shadow: 0 4px 4px #1d1e21;
+}
+
+/* Outros CSS*/
+img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
