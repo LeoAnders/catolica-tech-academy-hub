@@ -9,85 +9,73 @@
 </head>
 <body>
 
-    <h2>Variáveis e Tipos de Dados em C</h2>
-<p>
-    As variáveis são espaços na memória usados para armazenar valores temporários durante a execução de um programa. Para usar uma variável, é necessário declará-la especificando seu tipo de dado.
-</p>
+    <h2>Operadores Aritméticos</h2>
+<p>Os operadores aritméticos são usados para realizar operações matemáticas em variáveis e valores. Aqui estão os principais operadores aritméticos em C:</p>
 
-<h3>Declaração de Variáveis</h3>
-<p>
-    Para declarar uma variável em C, você deve definir o tipo de dado que ela armazenará, seguido do nome da variável. Exemplo:
-</p>
+<ul>
+    <li><code>+</code> : Adição</li>
+    <li><code>-</code> : Subtração</li>
+    <li><code>*</code> : Multiplicação</li>
+    <li><code>/</code> : Divisão</li>
+    <li><code>%</code> : Módulo (resto da divisão)</li>
+</ul>
+
+<p>Exemplo:</p>
 <pre><code class="language-c">
-    int idade;
-    float altura;
-    char inicial;
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10, b = 3;
+    int soma = a + b;
+    int subtracao = a - b;
+    int multiplicacao = a * b;
+    int divisao = a / b;
+    int modulo = a % b;
+
+    printf("Soma: %d\\n", soma);
+    printf("Subtração: %d\\n", subtracao);
+    printf("Multiplicação: %d\\n", multiplicacao);
+    printf("Divisão: %d\\n", divisao);
+    printf("Módulo: %d\\n", modulo);
+
+    return 0;
+}
 </code></pre>
 
-<p>No exemplo acima:</p>
+<h2>Operadores Lógicos</h2>
+<p>Os operadores lógicos são usados para combinar expressões booleanas. Aqui estão os principais operadores lógicos em C:</p>
 <ul>
-    <li><code>idade</code> é uma variável do tipo <code>int</code> (número inteiro),</li>
-    <li><code>altura</code> é do tipo <code>float</code> (número com ponto flutuante),</li>
-    <li><code>inicial</code> é do tipo <code>char</code> (caractere único).</li>
+    <li><code>&&</code> : E lógico (AND)</li>
+    <li><code>||</code> : OU lógico (OR)</li>
+    <li><code>!</code> : NÃO lógico (NOT)</li>
 </ul>
 
-<h3>Tipos de Dados Primitivos em C</h3>
-<p>Em C, os principais tipos de dados primitivos são:</p>
+<p>Exemplo:</p>
+<pre><code class="language-c">
+#include &lt;stdio.h&gt;
 
-<ol>
-    <li><strong>int</strong> (inteiros):
-        <p>Armazena números inteiros, positivos ou negativos, sem decimais.</p>
-        <pre><code class="language-c">int idade = 25;</code></pre>
-    </li>
-    <li><strong>float</strong> (números de ponto flutuante):
-        <p>Usado para números decimais com menor precisão.</p>
-        <pre><code class="language-c">float altura = 1.75;</code></pre>
-    </li>
-    <li><strong>double</strong> (números de ponto flutuante com maior precisão):
-        <p>Similar ao <code>float</code>, mas com maior capacidade de precisão.</p>
-        <pre><code class="language-c">double salario = 2500.50;</code></pre>
-    </li>
-    <li><strong>char</strong> (caracteres):
-        <p>Armazena um único caractere.</p>
-        <pre><code class="language-c">char inicial = 'G';</code></pre>
-    </li>
-</ol>
+int main() {
+    int x = 5, y = 10;
+    int resultado;
 
-<h2>Operações Básicas</h2>
+    // AND lógico
+    resultado = (x < 10 && y > 5);
+    printf("Resultado (x < 10 && y > 5): %d\\n", resultado);
 
-<h4>Operações Aritméticas</h4>
-<p>Em C, você pode realizar operações matemáticas básicas, como:</p>
+    // OR lógico
+    resultado = (x > 10 || y > 5);
+    printf("Resultado (x > 10 || y > 5): %d\\n", resultado);
 
-<ul>
-    <li><strong>Adição (+)</strong>:
-        <pre><code class="language-c">int resultado = 5 + 3;  // resultado será 8</code></pre>
-    </li>
-    <li><strong>Subtração (-)</strong>:
-        <pre><code class="language-c">int resultado = 10 - 4;  // resultado será 6</code></pre>
-    </li>
-    <li><strong>Multiplicação (*)</strong>:
-        <pre><code class="language-c">int resultado = 7 * 3;  // resultado será 21</code></pre>
-    </li>
-    <li><strong>Divisão (/)</strong>:
-        <pre><code class="language-c">float resultado = 10 / 4;  // resultado será 2.5</code></pre>
-    </li>
-    <li><strong>Módulo (%)</strong> (resto da divisão):
-        <pre><code class="language-c">int resultado = 10 % 3;  // resultado será 1</code></pre>
-    </li>
-</ul>
+    // NOT lógico
+    resultado = !(x > 10);
+    printf("Resultado (!(x > 10)): %d\\n", resultado);
 
-<h4>Operações de Incremento e Decremento</h4>
-<ul>
-    <li><strong>Incremento (++)</strong>: aumenta o valor de uma variável em 1.
-        <pre><code class="language-c">int x = 5;
-x++;  // x agora é 6</code></pre>
-    </li>
-    <li><strong>Decremento (--)</strong>: diminui o valor de uma variável em 1.
-        <pre><code class="language-c">int y = 5;
-y--;  // y agora é 4</code></pre>
-    </li>
-</ul>
+    return 0;
+}
+</code></pre>
 
+
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
 <script>hljs.highlightAll();</script>
