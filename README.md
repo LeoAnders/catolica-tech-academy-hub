@@ -15,7 +15,6 @@ O objetivo deste projeto é criar uma plataforma de documentação para consolid
 
 >* [Instalação](#-instalacao)
 >* [Fluxo de Trabalho](#-fluxo-de-trabalho)
->* [Criando Branchs](#-criando-branchs)
 >* [Como Trabalhar em Branches](#-como-trabalhar-em-branches)
 >* [Regras de Estrutura de Diretorios](#-regras-de-estrutura-de-diretórios)
 >* [Estrutura de Diretórios](#-estrutura-de-diretorios)
@@ -48,19 +47,6 @@ Nosso fluxo de trabalho segue o modelo **Feature Branch**, onde cada nova funcio
 - **Para Correções Críticas:** `hotfix/corrigir-falha-segurança`.
 - **Para Refatoração de Código:** `refactor/otimizar-funcao-busca`.
 - **Para Manutenção Geral:** `chore/atualizar-dependencias`.
-
----
-
-## 🌿 Criando Branchs
-#### 1. Crie a Branch Localmente
-```bash
-git checkout -b nome-da-branch
-```
-#### 2. Envie a Branch para o Repositório Remoto
-```bash
-git push origin nome-da-branch
-```
-Esses comandos cria a branch no repositório remoto e a torna disponível para outros colaboradores
 
 ---
 
