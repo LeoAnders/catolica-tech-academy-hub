@@ -29,7 +29,7 @@ Para instalar o projeto, siga os seguintes passos:
 
 ### 1. Clone o Repositório
    ```bash
-   https://github.com/LeoAnders/catolica-tech-academy-hub.git
+   git clone https://github.com/LeoAnders/catolica-tech-academy-hub.git
    ```
 ### 2. Navegue até o Diretório do Projeto
    ```bash
