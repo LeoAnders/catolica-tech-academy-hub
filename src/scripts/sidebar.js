@@ -6,3 +6,16 @@ document.querySelectorAll(".nav-link").forEach((item) => {
     this.classList.add("active");
   });
 });
+
+window.addEventListener("message", function (event) {
+  const page = event.data;
+  const links = document.querySelectorAll(".nav-link");
+
+  links.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href").includes(page)) {
+      link.classList.add("active");
+    }
+  });
+});

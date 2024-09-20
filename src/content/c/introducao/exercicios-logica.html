@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercícios básicos para praticar a lógica</title>
+  <script defer src="/src/scripts/notify-sidebar.js"></script>
   <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 
@@ -14,6 +15,19 @@
     <!-- Conteúdo aqui  -->
   </div>
 
+  <!-- Button navigation -->
+  <div class="navigation-buttons-container">
+    <a class="btn-navigation btn-previous" href="./importancia-logica.html"
+      onclick="notifySidebar('importancia-logica.html')">
+      <span class="btn-label">Anterior</span>
+      <span class="btn-tooltip">Onde a programação é utilizada?</span>
+    </a>
+
+    <a class="btn-navigation btn-next" href="#" onclick="notifySidebar('#')">
+      <span class="btn-label">Próxima</span>
+      <span class="btn-tooltip">O que é a linguagem C?</span>
+    </a>
+  </div>
 </body>
 
 </html>

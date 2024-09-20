@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O que é lógica de programação?</title>
+  <script src="/src/scripts/notify-sidebar.js"></script>
   <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 
@@ -27,8 +28,22 @@
     </aside>
 
     <p>Programar funciona da mesma maneira. A lógica organiza o passo a passo antes de você escrever o código.</p>
-  </div>
+    <!-- Button navigation -->
+    <div class="navigation-buttons-container">
+      <a class="btn-navigation btn-previous" href="./aplicacoes-programacao.html"
+        onclick="notifySidebar('aplicacoes-programacao.html')">
+        <span class="btn-label">Anterior</span>
+        <span class="btn-tooltip">Onde a programação é utilizada?</span>
+      </a>
 
+      <a class="btn-navigation btn-next" href="./importancia-logica.html"
+        onclick="notifySidebar('importancia-logica.html')">
+        <span class="btn-label">Próxima</span>
+        <span class="btn-tooltip">Importância de aprender lógica antes de programar</span>
+      </a>
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>

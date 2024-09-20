@@ -3,21 +3,25 @@
 :root {
   --text-light-100: rgb(234, 234, 234);
   --text-light-200: #e3e3e3;
-  --color-background-dark-400: #2a2e38;
-  --color-background-dark-500: #1c1e21;
+  --text-light-300: #b8b0b0;
+  --text-red-100: #cd3d3f;
+  --color-background-dark-100: #2a2e38;
+  --color-background-dark-200: #1c1e21;
+  --color-border-grey-100: #3b3f48;
+  --color-border-red-100: #cd3d3f;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: var(--color-background-dark-500);
+  background-color: var(--color-background-dark-200);
   color: var(--text-light-100);
-  margin-bottom: 4rem;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
   padding: 2rem;
+  padding-bottom: 7rem;
   box-sizing: border-box;
 }
 
@@ -61,13 +65,13 @@ ol li {
 
 /* Estilo para o bloco aside no qual apresentamos exemplos e notas*/
 aside {
-  background-color: var(--color-background-dark-400);
+  background-color: var(--color-background-dark-100);
   padding: 0.5rem;
   border-radius: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 4px #1d1e21;
-  border: 1px solid #3b3f48;
+  border: 1px solid var(--color-border-grey-100);
 }
 
 .aside-note {
@@ -87,7 +91,7 @@ pre code {
   border-radius: 1rem;
   box-shadow: 0 4px 4px #1d1e21;
   display: block;
-  border: 1px solid #3b3f48;
+  border: 1px solid var(--color-border-grey-100);
 }
 
 /* Estilo de imagens*/
@@ -96,4 +100,75 @@ img {
   margin: 0 auto;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
+}
+
+/* Estilo de botoes */
+.navigation-buttons-container {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  border-top: 0.5px solid var(--color-border-grey-100);
+  justify-content: space-between;
+}
+
+.btn-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  text-decoration: none;
+  border: 1px solid var(--color-border-grey-100);
+  transition: border-color 0.3s ease;
+  width: 300px;
+  height: 66px;
+}
+
+.btn-navigation span {
+  margin: 2px;
+  display: block;
+}
+
+.btn-navigation:hover {
+  border-color: var(--color-border-red-100);
+}
+
+.btn-previous {
+  margin-right: auto;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.btn-next {
+  margin-left: auto;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.btn-navigation .btn-label {
+  color: var(--text-light-300);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.btn-navigation .btn-tooltip {
+  color: var(--text-red-100);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background-color: var(--color-background-red);
+  color: var(--text-text-red-100);
+  padding-left: 1.2rem;
+  margin-right: 0.8rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav-link.active:hover {
+  background-color: var(--color-background-red);
 }
