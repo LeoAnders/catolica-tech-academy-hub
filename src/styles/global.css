@@ -90,6 +90,16 @@ pre code {
   border: 1px solid #3b3f48;
 }
 
+code.tag-code {
+  background: rgba(135, 131, 120, .15);
+  color: #d63f3f;
+  padding: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 2px;
+  font-weight: 300;
+
+}
 /* Estilo de imagens*/
 img {
   display: block;
