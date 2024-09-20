@@ -106,8 +106,9 @@ code.tag-code {
   margin-right: 2px;
   border-radius: 2px;
   font-weight: 300;
-
+  font-size: 0.8rem;
 }
+
 /* Estilo de imagens*/
 img {
   display: block;
