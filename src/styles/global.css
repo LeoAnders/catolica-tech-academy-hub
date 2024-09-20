@@ -74,6 +74,14 @@ aside {
   background-color: #22584e;
 }
 
+.aside-idea {
+  background-color: #222a74;
+}
+
+.aside-capacity {
+  background-color: darkslateblue;
+}
+
 aside h4 {
   margin-left: 1rem;
 }
