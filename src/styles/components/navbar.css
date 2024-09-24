@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --text-light-100: rgb(243, 243, 243);
   --text-light-200: rgb(169, 169, 169);
@@ -8,6 +10,9 @@
 
 .navbar {
   background-color: #622c2d;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .navbar .nav-item {
