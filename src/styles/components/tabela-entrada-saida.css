@@ -1,0 +1,20 @@
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: auto;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+td code {
+  font-family: "Courier New", Courier, monospace;
+  color: #d63384;
+}

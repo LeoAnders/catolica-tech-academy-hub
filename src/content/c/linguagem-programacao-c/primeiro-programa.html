@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O primeiro programa: "Hello, World!"</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Como criar seu primeiro programa "Hello World!" em Linguagem C</h1>
+    <p>Este guia vai te ajudar a escrever e executar seu primeiro programa em C, que exibe a mensagem "Hello World!" na
+      tela.</p>
+
+    <h2>Passo a Passo</h2>
+    <ol>
+      <li>
+        <span class="bold">Instale um compilador:</span>
+        Você precisará de um compilador C. Algumas opções populares incluem:
+        <ul>
+          <li>GCC (GNU Compiler Collection)</li>
+          <li>Clang</li>
+          <li>Microsoft Visual C++</li>
+        </ul>
+      </li>
+      <li>
+        <span class="bold">Crie um arquivo fonte:</span>
+        Abra seu editor de texto favorito e crie um novo arquivo chamado <span class="bold">hello.c</span>.
+      </li>
+      <li>
+        <span class="bold">Escreva o código:</span>
+        Insira o seguinte código no arquivo <span class="bold">hello.c</span>:
+        <pre><code class="lenguage-c">#include &lt;stdio.h&gt;
+
+int main() {
+  printf("Hello, World!\\n");
+  return 0;
+}</code></pre>
+      </li>
+
+
+      <li>
+        <span class="bold">Compile o programa:</span>
+        Abra o terminal ou prompt de comando e navegue até o diretório onde o arquivo <span class="bold">hello.c</span>
+        está salvo. Execute o comando: <code class="tag-code">gcc hello.c -o hello</code>
+      </li>
+
+
+      <li>
+        <span class="bold">Execute o programa:</span>
+        Após a compilação, execute o programa gerado com o comando: <code class="tag-code">./hello</code>Você deve ver a
+        mensagem:<code class="tag-code">Hello, World!</code>
+      </li>
+    </ol>
+
+    <aside class="aside-idea">
+      <h4>
+        <i class="fa-solid fa-lightbulb"></i>
+        Dicas Importantes:
+      </h4>
+      <p><span class="bold"></span> Se estiver usando Windows, o comando para executar pode ser apenas hello (sem o ./).
+      </p>
+    </aside>
+
+    <h2>Conclusão</h2>
+    <p>Parabéns! Você escreveu e executou seu primeiro programa em C. Agora você pode explorar mais e criar programas
+      mais complexos!</p>
+
+    <p>Para mais informações sobre programação em C, consulte a documentação oficial ou tutoriais online.</p>
+    <a class="link" href="https://www.learn-c.org/">Aprenda C aqui!</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</body>
+
+
+</html>

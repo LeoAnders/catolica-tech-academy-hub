@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estruturas condicionais</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css"
+		/>
+		<link rel="stylesheet" href="/src/styles/global.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Estruturas Condicionais</h1>
+
+			<h2>A importância das Estruturas Condicionais em C</h2>
+			<p>
+				As estruturas condicionais em C são fundamentais para controlar
+				o fluxo de um programa com base em diferentes condições. O
+				comando
+				<span class="bold">if</span> executa um bloco de código apenas
+				se uma condição específica for verdadeira. O
+				<span class="bold">else</span> é utilizado para tratar o caso
+				onde a condição do <span class="bold">if</span> é falsa. Já o
+				<span class="bold">else if</span> permite testar várias
+				condições adicionais.
+			</p>
+
+			<h2>A Declaração <span class="bold">if</span></h2>
+			<p>
+				A declaração <span class="bold">if</span> é usada para
+				especificar um bloco de código que será executado se uma
+				condição for verdadeira.
+			</p>
+			<p><span class="bold">Sintaxe:</span></p>
+			<pre><code class="lenguage-c">
+if (condition) {
+    // bloco de código a ser executado se a condição for verdadeira
+}
+    </code></pre>
+			<p>
+				Note que <span class="bold">if</span> está em letras minúsculas.
+				Letras maiúsculas (<span class="bold">If</span> ou
+				<span class="bold">IF</span>) gerarão um erro.
+			</p>
+
+			<p>
+				No exemplo abaixo, testamos dois valores para descobrir se 20 é
+				maior que 18. Se a condição for verdadeira, imprime um texto:
+			</p>
+			<p><span class="bold">Exemplo:</span></p>
+
+			<pre><code class="lenguage-c">
+if (20 > 18) {
+    printf("20 é maior que 18");
+}
+      </code></pre>
+
+			<p>Também podemos testar variáveis:</p>
+			<p><span class="bold">Exemplo:</span></p>
+			<pre><code class="lenguage-c">
+int x = 20;
+int y = 18;
+
+if (x > y) {
+    printf("x é maior que y");
+}
+    </code></pre>
+
+			<p>
+				No exemplo acima, usamos duas variáveis,
+				<span class="bold">x</span> e <span class="bold">y</span>, para
+				testar se <span class="bold">x</span> é maior que
+				<span class="bold">y</span> (usando o operador
+				<span class="bold">&gt;</span>). Como
+				<span class="bold">x</span> é 20 e
+
+				<span class="bold">y</span> é 18, e sabemos que 20 é maior que
+				18, imprimimos na tela que "x é maior que y".
+			</p>
+
+			<h2>A Declaração <span class="bold">else</span></h2>
+			<p>
+				A declaração <span class="bold">else</span> é usada para
+				especificar um bloco de código que será executado se a condição
+				for falsa.
+			</p>
+
+			<p><span class="bold">Sintaxe:</span></p>
+			<pre><code code class="lenguage-c">
+if (condition) {
+    // bloco de código a ser executado se a condição for verdadeira
+
+} else {
+    // bloco de código a ser executado se a condição for falsa
+}
+    </code></pre>
+
+			<p><span class="bold">Exemplo:</span></p>
+			<pre><code code class="lenguage-c">
+int time = 20;
+
+if (time < 18) {
+    printf("Bom dia.");
+
+} else {
+    printf("Boa noite.");
+}
+
+// Saída: "Boa noite."
+    </code></pre>
+
+			<p>
+				No exemplo acima, <span class="bold">time</span> (20) é maior
+				que 18, então a condição é falsa. Por isso, o código segue para
+				o bloco <span class="bold">else</span> e imprime "Boa noite" na
+				tela. Se <span class="bold">time</span> fosse menor que 18, o
+				programa imprimiria "Bom dia".
+			</p>
+
+			<h2>A Declaração <span class="bold">else if</span></h2>
+			<p>
+				A declaração <span class="bold">else if</span> é usada para
+				especificar uma nova condição se a primeira for falsa.
+			</p>
+
+			<p><span class="bold">Sintaxe:</span></p>
+			<pre><code class="lenguage-c">
+if (condition1) {
+    // bloco de código a ser executado se a condition1 for verdadeira
+} else if (condition2) {
+    // bloco de código a ser executado se a condition1 for falsa e a condition2 for verdadeira
+} else {
+    // bloco de código a ser executado se condition1 e condition2 forem falsas
+}
+    </code></pre>
+
+			<p><span class="bold">Exemplo:</span></p>
+			<pre><code class="lenguage-c">
+int time = 22;
+
+if (time < 10) {
+    printf("Bom dia.");
+} else if (time < 20) {
+    printf("Boa tarde.");
+} else {
+    printf("Boa noite.");
+}
+// Saída: "Boa noite."
+    </code></pre>
+
+			<p>
+				No exemplo acima, <span class="bold">time</span> (22) é maior
+				que 10, então a primeira condição é falsa. A próxima condição,
+				no <span class="bold">else if</span>, também é falsa, então
+				seguimos para o bloco <span class="bold">else</span>, onde
+				imprimimos "Boa noite" na tela. No entanto, se
+				<span class="bold">time</span> fosse 14, o programa imprimiria
+				"Boa tarde".
+			</p>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de laços de repetição em C</title>
+  <script defer src="/src/scripts/notify-sidebar.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/components/tabela-entrada-saida.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Exemplos de Laços de Repetição em C</h1>
+    <p>Os laços de repetição em C permitem executar um bloco de código várias vezes, com base em condições ou contadores. Abaixo estão exemplos práticos dos diferentes tipos de laços de repetição: <span class="bold">for</span>, <span class="bold">while</span> e <span class="bold">do-while</span>.</p>
+
+    <h2>1. Exemplo com <code>for</code></h2>
+    <p>O laço <code>for</code> é útil quando o número de iterações é conhecido de antemão. Ele permite a inicialização, condição e incremento em uma única linha.</p>
+
+    <h3>Exemplo 1: Imprimir Números de 1 a 10</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+    for (i = 1; i <= 10; i++) {
+        printf("%d\n", i);
+    }
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+10</code></pre>
+
+    <h3>Exemplo 2: Soma dos Números de 1 a 5</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+    int soma = 0;
+    for (i = 1; i <= 5; i++) {
+        soma += i;
+    }
+    printf("A soma é %d\n", soma);
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>A soma é 15</code></pre>
+
+    <h2>2. Exemplo com <code>while</code></h2>
+    <p>O laço <code>while</code> é usado quando o número de iterações não é conhecido de antemão e depende de uma condição.</p>
+
+    <h3>Exemplo 1: Imprimir Números de 1 a 10</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 1;
+    while (i <= 10) {
+        printf("%d\n", i);
+        i++;
+    }
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+10</code></pre>
+
+    <h3>Exemplo 2: Encontrar o Fatorial de um Número</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int n = 5;
+    int fatorial = 1;
+    while (n > 0) {
+        fatorial *= n;
+        n--;
+    }
+    printf("O fatorial é %d\n", fatorial);
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>O fatorial é 120</code></pre>
+
+    <h2>3. Exemplo com <code>do-while</code></h2>
+    <p>O laço <code>do-while</code> garante que o bloco de código seja executado pelo menos uma vez antes da verificação da condição.</p>
+
+    <h3>Exemplo 1: Imprimir Números de 1 a 10</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 1;
+    do {
+        printf("%d\n", i);
+        i++;
+    } while (i <= 10);
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+10</code></pre>
+
+    <h3>Exemplo 2: Contar de 10 a 1</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 10;
+    do {
+        printf("%d\n", i);
+        i--;
+    } while (i >= 1);
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>10
+9
+8
+7
+6
+5
+4
+3
+2
+1</code></pre>
+
+    <h2>4. Exemplos de Laços Aninhados</h2>
+    <p>Laços de repetição podem ser aninhados para criar padrões complexos ou realizar operações em matrizes.</p>
+
+    <h3>Exemplo 1: Imprimir uma Tabela de Multiplicação</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j;
+    for (i = 1; i <= 10; i++) {
+        for (j = 1; j <= 10; j++) {
+            printf("%4d", i * j);
+        }
+        printf("\n");
+    }
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>   1   2   3   4   5   6   7   8   9  10
+   2   4   6   8  10  12  14  16  18  20
+   3   6   9  12  15  18  21  24  27  30
+   4   8  12  16  20  24  28  32  36  40
+   5  10  15  20  25  30  35  40  45  50
+   6  12  18  24  30  36  42  48  54  60
+   7  14  21  28  35  42  49  56  63  70
+   8  16  24  32  40  48  56  64  72  80
+   9  18  27  36  45  54  63  72  81  90
+  10  20  30  40  50  60  70  80  90 100</code></pre>
+
+    <h3>Exemplo 2: Criar um Padrão de Estrela</h3>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j;
+    int n = 5; // Número de linhas
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}</code></pre>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>*
+**
+***
+****
+*****</code></pre>
+
+    <aside class="aside-note">
+      <h4><i class="fas fa-sticky-note"></i>
+        Nota:
+      </h4>
+      Com estes exemplos, você tem uma compreensão prática de como usar laços de repetição em C para realizar várias tarefas. Esses laços são ferramentas poderosas para automatizar e simplificar a execução repetitiva de blocos de código.
+    </aside>
+    <!-- Button navigation -->
+    <div class="navigation-buttons-container">
+        <a class="btn-navigation btn-previous nav-link" href="controle-loops-break-continue.html"
+          onclick="notifySidebar('controle-loops-break-continue.html')">
+          <span class="btn-label">Anterior</span>
+          <span class="btn-tooltip">Controle de loops com break e continue</span>
+        </a>
+  
+        <a class="btn-navigation btn-next nav-link" href="exercicios-praticos.html"
+          onclick="notifySidebar('lacos-repeticao/exercicios-praticos.html')">
+          <span class="btn-label">Próxima</span>
+          <span class="btn-tooltip">Exercícios Práticos de laços de repetição</span>
+        </a>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>
