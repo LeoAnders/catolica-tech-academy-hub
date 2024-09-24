@@ -1,19 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Operadores Relacionais e Lógicos</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css"
+		/>
+		<link rel="stylesheet" href="/src/styles/global.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Operadores relacionais e lógicos</title>
-  <link rel="stylesheet" href="/src/styles/global.css">
-</head>
+	<body>
+		<div class="container">
+			<h1>Operadores Relacionais e Lógicos</h1>
 
-<body>
+			<h2>Operadores Relacionais</h2>
+			<p>
+				Os operadores relacionais em C são usados para comparar dois
+				valores ou expressões:
+			</p>
+			<ul>
+				<li><code class="tag-code">==</code> (igual a)</li>
+				<li><code class="tag-code">!=</code> (diferente de)</li>
+				<li><code class="tag-code">></code> (maior que)</li>
+				<li><code class="tag-code"><</code> (menor que)</li>
+				<li><code class="tag-code">>=</code> (maior ou igual a)</li>
+				<li><code class="tag-code"><=</code> (menor ou igual a)</li>
+			</ul>
 
-  <div class="container">
-    <!-- Conteúdo aqui  -->
-  </div>
+			<h2>Operadores Lógicos</h2>
+			<p>Os operadores lógicos combinam expressões booleanas:</p>
+			<ul>
+				<li>
+					<code class="tag-code">&&</code> (E lógico): retorna
+					verdadeiro se ambas as condições forem verdadeiras.
+				</li>
+				<li>
+					<code class="tag-code">||</code> (OU lógico): retorna
+					verdadeiro se **pelo menos uma** das condições for
+					verdadeira.
+				</li>
+				<li>
+					<code class="tag-code">!</code> (NÃO lógico): inverte o
+					valor de uma condição (de verdadeiro para falso, ou
+					vice-versa).
+				</li>
+			</ul>
 
-</body>
+			<h2>Exemplo de Operadores Relacionais e Lógicos</h2>
+			<pre><code class="lenguage-c">
+int x = 5, y = 10;
 
+if (x < y && y < 20) {
+    printf("A condicao e verdadeira.\n");
+}
+			</code></pre>
+
+			<h2>Exemplo de OU Lógico</h2>
+			<pre><code class="lenguage-c">
+int x = 3;
+
+if (x < 5 || x < 4) {
+    printf("Uma das condicoes e verdadeira.\n");
+} else {
+    printf("Nenhuma das condicoes e verdadeira.\n");
+}
+			</code></pre>
+
+			<h2>Operadores de Atribuição Compostos</h2>
+			<p>
+				Os operadores de atribuição compostos permitem simplificar
+				expressões de atribuição:
+			</p>
+			<ul>
+				<li>
+					<code class="tag-code">+=</code> (adição):
+					<code class="tag-code">x += 3</code> é equivalente a
+					<code class="tag-code">x = x + 3</code>
+				</li>
+				<li>
+					<code class="tag-code">-=</code> (subtração):
+					<code class="tag-code">x -= 3</code> é equivalente a
+					<code class="tag-code">x = x - 3</code>
+				</li>
+				<li>
+					<code class="tag-code">*=</code> (multiplicação):
+					<code class="tag-code">x *= 3</code> é equivalente a
+					<code class="tag-code">x = x * 3</code>
+				</li>
+				<li>
+					<code class="tag-code">/=</code> (divisão):
+					<code class="tag-code">x /= 3</code> é equivalente a
+					<code class="tag-code">x = x / 3</code>
+				</li>
+				<li>
+					<code class="tag-code">%=</code> (módulo):
+					<code class="tag-code">x %= 3</code> é equivalente a
+					<code class="tag-code">x = x % 3</code>
+				</li>
+			</ul>
+
+			<h2>Exemplo de Uso dos Operadores de Atribuição Compostos</h2>
+
+			<pre><code class="lenguage-c">
+int x = 10;
+
+x += 3;  // x agora é 13
+x -= 2;  // x agora é 11
+x *= 4;  // x agora é 44
+x /= 4;  // x agora é 11
+x %= 3;  // x agora é 2
+			</code></pre>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
 </html>

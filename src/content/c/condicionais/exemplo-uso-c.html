@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exemplos de uso em C</title>
+		<script defer src="/src/scripts/notify-sidebar.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/src/styles/components/tabela-entrada-saida.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="/src/styles/global.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo de uso em C</title>
-  <link rel="stylesheet" href="/src/styles/global.css">
-</head>
+	<body>
+		<div class="container"></div>
+			<h1>Exemplo de Uso em C</h1>
 
-<body>
+			<h2>Um exemplo simples de uso das estruturas condicionais com operadores relacionais e lógicos em C</h2>
+			<pre><code class="language-c">
+int temperature = 30;
 
-  <div class="container">
-    <!-- Conteúdo aqui  -->
-  </div>
+if (temperature > 35) {
+    printf("E um dia quente.\n");
+} else if (temperature >= 25 && temperature <= 35) {
+    printf("E um dia agradavel.\n");
+} else {
+    printf("E um dia frio.\n");
+}
+			</code></pre>
+			<aside class="aside-idea">
+				<h4><i class="fa-solid fa-lightbulb"></i> Dicas:</h4>
+				<ul>
+					<li>Antes de codificar, escreva uma lista das condições e resultados esperados. Isso ajuda a organizar o pensamento.</li>
+					<li>
+						Use a indentação correta para tornar o código mais legível. Um código bem formatado facilita a identificação de erros.
+					</li>
+				</ul>
+			</aside>
+			<h2>Explicação</h2>
+				<p>Neste exemplo, o programa decide que mensagem exibir com base na temperatura informada.</p>
+			
 
-</body>
 
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
 </html>
