@@ -14,24 +14,27 @@
 
 <body>
   <div class="container">
-      <h1>Conceitos Básicos</h1>
-      
-      <h2>Estruturas de Repetição em C</h2>
-      <p>Em C, as estruturas de repetição permitem executar um bloco de código várias vezes, facilitando a realização de tarefas repetitivas. As principais estruturas de repetição em C são o <span class="bold">for</span>, o <span class="bold">while</span> e o <span class="bold">do-while</span>.</p>
+    <h1>Conceitos Básicos</h1>
 
-      <h3>Funções Principais:</h3>
-      
-      <ol>
-          <li>
-              <span class="bold">for</span>: O loop <span class="bold">for</span> é ideal para quando o número de iterações é conhecido antes da execução. Ele é composto por três partes: inicialização, condição e incremento/atualização.
-              <p><span class="bold">Sintaxe:</span></p>
-              <pre><code>
+    <h2>Estruturas de Repetição em C</h2>
+    <p>Em C, as estruturas de repetição permitem executar um bloco de código várias vezes, facilitando a realização de
+      tarefas repetitivas. As principais estruturas de repetição em C são o <span class="bold">for</span>, o <span
+        class="bold">while</span> e o <span class="bold">do-while</span>.</p>
+
+    <h3>Funções Principais:</h3>
+
+    <ol>
+      <li>
+        <span class="bold">for</span>: O loop <span class="bold">for</span> é ideal para quando o número de iterações é
+        conhecido antes da execução. Ele é composto por três partes: inicialização, condição e incremento/atualização.
+        <p><span class="bold">Sintaxe:</span></p>
+        <pre><code>
 for (inicialização; condição; incremento) {
   // bloco de código
 }
               </code></pre>
-              <p><span class="bold">Exemplo:</span></p>
-              <pre><code>
+        <p><span class="bold">Exemplo:</span></p>
+        <pre><code>
 #include <stdio.h>
 
 int main() {
@@ -42,25 +45,27 @@ int main() {
   return 0;
 }
               </code></pre>
-              <p><span class="bold">Saída:</span></p>
-              <pre><code>
+        <p><span class="bold">Saída:</span></p>
+        <pre><code>
 Iteração 0
 Iteração 1
 Iteração 2
 Iteração 3
 Iteração 4
               </code></pre>
-          </li>
-          <li>
-              <span class="bold">while</span>: O loop <span class="bold">while</span> é usado quando o número de iterações não é conhecido e depende de uma condição ser verdadeira. O bloco de código é executado enquanto a condição for verdadeira.
-              <p><span class="bold">Sintaxe:</span></p>
-              <pre><code>
+      </li>
+      <li>
+        <span class="bold">while</span>: O loop <span class="bold">while</span> é usado quando o número de iterações não
+        é conhecido e depende de uma condição ser verdadeira. O bloco de código é executado enquanto a condição for
+        verdadeira.
+        <p><span class="bold">Sintaxe:</span></p>
+        <pre><code>
 while (condição) {
   // bloco de código
 }
               </code></pre>
-              <p><span class="bold">Exemplo:</span></p>
-              <pre><code>
+        <p><span class="bold">Exemplo:</span></p>
+        <pre><code>
 #include <stdio.h>
 
 int main() {
@@ -72,25 +77,27 @@ int main() {
   return 0;
 }
               </code></pre>
-              <p><span class="bold">Saída:</span></p>
-              <pre><code>
+        <p><span class="bold">Saída:</span></p>
+        <pre><code>
 Iteração 0
 Iteração 1
 Iteração 2
 Iteração 3
 Iteração 4
               </code></pre>
-          </li>
-          <li>
-              <span class="bold">do-while</span>: O loop <span class="bold">do-while</span> garante que o bloco de código seja executado pelo menos uma vez antes da verificação da condição. É útil quando você precisa garantir a execução inicial.
-              <p><span class="bold">Sintaxe:</span></p>
-              <pre><code>
+      </li>
+      <li>
+        <span class="bold">do-while</span>: O loop <span class="bold">do-while</span> garante que o bloco de código seja
+        executado pelo menos uma vez antes da verificação da condição. É útil quando você precisa garantir a execução
+        inicial.
+        <p><span class="bold">Sintaxe:</span></p>
+        <pre><code>
 do {
   // bloco de código
 } while (condição);
               </code></pre>
-              <p><span class="bold">Exemplo:</span></p>
-              <pre><code>
+        <p><span class="bold">Exemplo:</span></p>
+        <pre><code>
 #include <stdio.h>
 
 int main() {
@@ -102,21 +109,21 @@ int main() {
   return 0;
 }
               </code></pre>
-              <p><span class="bold">Saída:</span></p>
-              <pre><code>
+        <p><span class="bold">Saída:</span></p>
+        <pre><code>
 Iteração 0
 Iteração 1
 Iteração 2
 Iteração 3
 Iteração 4
               </code></pre>
-          </li>
-      </ol>
+      </li>
+    </ol>
 
-      <h3>Estruturas de Repetição Aninhadas:</h3>
-      <p>Você também pode aninhar estruturas de repetição para criar loops dentro de loops.</p>
-      <p><span class="bold">Exemplo:</span></p>
-      <pre><code>
+    <h3>Estruturas de Repetição Aninhadas:</h3>
+    <p>Você também pode aninhar estruturas de repetição para criar loops dentro de loops.</p>
+    <p><span class="bold">Exemplo:</span></p>
+    <pre><code>
 #include <stdio.h>
 
 int main() {
@@ -129,8 +136,8 @@ int main() {
   return 0;
 }
       </code></pre>
-      <p><span class="bold">Saída:</span></p>
-      <pre><code>
+    <p><span class="bold">Saída:</span></p>
+    <pre><code>
 i = 0, j = 0
 i = 0, j = 1
 i = 0, j = 2
@@ -141,17 +148,20 @@ i = 2, j = 0
 i = 2, j = 1
 i = 2, j = 2
       </code></pre>
-      <aside class="aside-idea">
-        <h4><i class="fa-solid fa-lightbulb"></i>
+    <aside class="aside-idea">
+      <h4><i class="fa-solid fa-lightbulb"></i>
         Dicas Importantes:
       </h4>
-        <ul>
-          <li><span class="bold">Controle de Fluxo</span>: Use <span class="bold">break</span> para sair de um loop e <span class="bold">continue</span> para pular para a próxima iteração.</li>
-          <li><span class="bold">Evite Loops Infinitos</span>: Certifique-se de que a condição de saída do loop seja alcançável para evitar loops infinitos.</li>
-        </ul>
-      </aside>
-      <h3>Veja mais sobre <span class="bold">break</span> e <span class="bold">continue</span> em nosso tópico exclusivo sobre Controle de Loops.</h3>
-      <pre><code>
+      <ul>
+        <li><span class="bold">Controle de Fluxo</span>: Use <span class="bold">break</span> para sair de um loop e
+          <span class="bold">continue</span> para pular para a próxima iteração.</li>
+        <li><span class="bold">Evite Loops Infinitos</span>: Certifique-se de que a condição de saída do loop seja
+          alcançável para evitar loops infinitos.</li>
+      </ul>
+    </aside>
+    <h3>Veja mais sobre <span class="bold">break</span> e <span class="bold">continue</span> em nosso tópico exclusivo
+      sobre Controle de Loops.</h3>
+    <pre><code>
 #include <stdio.h>
 
 int main() {
@@ -162,13 +172,13 @@ int main() {
   return 0;
 }
       </code></pre>
-      <aside class="aside-note">
-        <h4><i class="fas fa-sticky-note"></i>
-          Nota:
-        </h4>
-        Com essas informações, você deve ter uma compreensão sólida das estruturas de repetição em C.
-      </aside>
-      <!-- Button navigation -->
+    <aside class="aside-note">
+      <h4><i class="fas fa-sticky-note"></i>
+        Nota:
+      </h4>
+      Com essas informações, você deve ter uma compreensão sólida das estruturas de repetição em C.
+    </aside>
+    <!-- Button navigation -->
     <div class="navigation-buttons-container">
       <a class="btn-navigation btn-previous nav-link" href="../condicionais/exercicios-praticos.html"
         onclick="notifySidebar('condicionais/exercicios-praticos.html')">
