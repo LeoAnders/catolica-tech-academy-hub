@@ -15,20 +15,23 @@
 <body>
   <div class="container">
     <h1>Controle de Loops com <code>break</code> e <code>continue</code> em C</h1>
-    <p>Em C, o controle de fluxo dentro de loops pode ser manipulado usando as instruções <code>break</code> e
-      <code>continue</code>. Essas instruções ajudam a alterar o comportamento de loops (<code>for</code>,
-      <code>while</code> e <code>do-while</code>) de maneira flexível.</p>
+    <p>Em C, o controle de fluxo dentro de loops pode ser manipulado usando as instruções <code
+        class="tag-code-red">break</code> e
+      <code class="tag-code-red">continue</code>. Essas instruções ajudam a alterar o comportamento de loops (<code
+        class="tag-code-red">for</code>,
+      <code class="tag-code-red">while</code> e <code class="tag-code-red">do-while</code>) de maneira flexível.
+    </p>
 
-    <h2>1. <code>break</code></h2>
-    <p>A instrução <code>break</code> é usada para sair imediatamente do loop em que está inserida. Quando o
-      <code>break</code> é executado, a execução do loop é interrompida e o controle do programa passa para a primeira
-      linha de código após o loop.</p>
+    <h2>1. break</h2>
+    <p>A instrução <code class="tag-code-red">break</code> é usada para sair imediatamente do loop em que está inserida.
+      Quando o
+      <code class="tag-code-red">break</code> é executado, a execução do loop é interrompida e o controle do programa
+      passa para a primeira
+      linha de código após o loop.
+    </p>
 
-    <p><strong>Sintaxe:</strong></p>
-    <pre><code>break;</code></pre>
-
-    <h3>Exemplo com <code>for</code>:</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <h3>Exemplo com for</h3>
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
   for (int i = 0; i &lt; 10; i++) {
@@ -43,7 +46,7 @@ int main() {
       </code></pre>
 
     <p><strong>Saída:</strong></p>
-    <pre><code>i = 0
+    <pre><code class="language-c">i = 0
 i = 1
 i = 2
 i = 3
@@ -51,8 +54,8 @@ i = 4
 Loop terminado.
       </code></pre>
 
-    <h3>Exemplo com <code>while</code>:</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <h3>Exemplo com while</h3>
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
   int i = 0;
@@ -69,7 +72,7 @@ int main() {
       </code></pre>
 
     <p><strong>Saída:</strong></p>
-    <pre><code>i = 0
+    <pre><code class="language-c">i = 0
 i = 1
 i = 2
 i = 3
@@ -78,13 +81,12 @@ Loop terminado.
       </code></pre>
 
     <h2>2. <code>continue</code></h2>
-    <p>A instrução <code>continue</code> é usada para pular o restante do código dentro do loop para a iteração atual e
+    <p>A instrução <code class="tag-code-red">continue</code> é usada para pular o restante do código dentro do loop
+      para a iteração atual e
       continuar com a próxima iteração.</p>
 
-    <pre><code>continue;</code></pre>
-
     <h3>Exemplo com <code>for</code>:</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
   for (int i = 0; i &lt; 10; i++) {
@@ -98,15 +100,15 @@ int main() {
       </code></pre>
 
     <p><strong>Saída:</strong></p>
-    <pre><code>i = 1
+    <pre><code class="language-c">i = 1
 i = 3
 i = 5
 i = 7
 i = 9
       </code></pre>
 
-    <h3>Exemplo com <code>while</code>:</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <h3>Exemplo com while</h3>
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
   int i = 0;
@@ -122,7 +124,7 @@ int main() {
       </code></pre>
 
     <p><strong>Saída:</strong></p>
-    <pre><code>i = 1
+    <pre><code class="language-c">i = 1
 i = 3
 i = 5
 i = 7
@@ -130,11 +132,12 @@ i = 9
       </code></pre>
 
     <h2>3. Exemplos de Controle de Fluxo em Loops Aninhados</h2>
-    <p>Você pode usar <code>break</code> e <code>continue</code> em loops aninhados para controlar a execução dos loops
+    <p>Você pode usar <code class="tag-code-red">break</code> e <code class="tag-code-red">continue</code> em loops
+      aninhados para controlar a execução dos loops
       internos e externos.</p>
 
-    <h3>Exemplo com <code>break</code> em loops aninhados:</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <h3>Exemplo com break em loops aninhados:</h3>
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
   for (int i = 0; i &lt; 3; i++) {
@@ -150,14 +153,14 @@ int main() {
       </code></pre>
 
     <p><strong>Saída:</strong></p>
-    <pre><code>i = 0, j = 0
+    <pre><code class="language-c">i = 0, j = 0
 i = 0, j = 1
 i = 0, j = 2
 i = 1, j = 0
       </code></pre>
 
-    <h3>Exemplo com <code>continue</code> em loops aninhados:</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <h3>Exemplo com continue em loops aninhados:</h3>
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
   for (int i = 0; i &lt; 3; i++) {
@@ -173,7 +176,7 @@ int main() {
       </code></pre>
 
     <p><strong>Saída:</strong></p>
-    <pre><code>i = 0, j = 0
+    <pre><code class="language-c">i = 0, j = 0
 i = 0, j = 2
 i = 1, j = 0
 i = 1, j = 2
@@ -182,21 +185,24 @@ i = 2, j = 2
       </code></pre>
     <aside class="aside-idea">
       <h4><i class="fa-solid fa-lightbulb"></i>
-        Dicas Importantes:
+        Dicas
       </h4>
       <ul>
-        <li><span class="bold">Use <code>break</code> com cuidado</span>: Evite usar <code>break</code> para sair de
+        <li><span class="bold">Use <code class="tag-code-white">break</code> com cuidado</span>: Evite usar <code
+            class="tag-code-white">break</code> para sair de
           loops sem uma razão clara, pois pode tornar o código mais difícil de entender e manter.</li>
-        <li><span class="bold">Use <code>continue</code> para pular partes do código</span>: <code>continue</code> pode
+        <li><span class="bold">Use <code class="tag-code-white">continue</code> para pular partes do código</span>:
+          <code class="tag-code-white">continue</code> pode
           ser útil para pular determinadas iterações baseadas em condições específicas.</li>
       </ul>
     </aside>
     <aside class="aside-note">
       <h4><i class="fas fa-sticky-note"></i>
-        Nota:
+        Nota
       </h4>
       Com essas informações, você deve ter uma compreensão clara de como controlar o fluxo dos loops em C usando
-      <code>break</code> e <code>continue</code>. Esses conceitos são fundamentais para escrever código eficiente e
+      <code class="tag-code-white">break</code> e <code class="tag-code-white">continue</code>. Esses conceitos são
+      fundamentais para escrever código eficiente e
       evitar loops desnecessários ou complexos.
     </aside>
     <!-- Button navigation -->

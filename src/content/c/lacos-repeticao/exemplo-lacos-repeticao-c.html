@@ -19,12 +19,14 @@
       contadores. Abaixo estão exemplos práticos dos diferentes tipos de laços de repetição: <span
         class="bold">for</span>, <span class="bold">while</span> e <span class="bold">do-while</span>.</p>
 
-    <h2>1. Exemplo com <code>for</code></h2>
-    <p>O laço <code>for</code> é útil quando o número de iterações é conhecido de antemão. Ele permite a inicialização,
+    <h2>1. Exemplo com for</h2>
+    <p>O laço <code class="tag-code-red">for</code> é útil quando o número de iterações é conhecido de antemão. Ele
+      permite
+      a inicialização,
       condição e incremento em uma única linha.</p>
 
     <h3>Exemplo 1: Imprimir Números de 1 a 10</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i;
@@ -34,7 +36,8 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>1
+    <pre><code class="language-c">
+1
 2
 3
 4
@@ -43,10 +46,11 @@ int main() {
 7
 8
 9
-10</code></pre>
+10
+    </code></pre>
 
     <h3>Exemplo 2: Soma dos Números de 1 a 5</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i;
@@ -58,14 +62,15 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>A soma é 15</code></pre>
+    <pre><code class="language-c">A soma é 15</code></pre>
 
-    <h2>2. Exemplo com <code>while</code></h2>
-    <p>O laço <code>while</code> é usado quando o número de iterações não é conhecido de antemão e depende de uma
+    <h2>2. Exemplo com while</h2>
+    <p>O laço <code class="tag-code-red">while</code> é usado quando o número de iterações não é conhecido de antemão e
+      depende de uma
       condição.</p>
 
     <h3>Exemplo 1: Imprimir Números de 1 a 10</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i = 1;
@@ -76,7 +81,7 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>1
+    <pre><code class="language-c">1
 2
 3
 4
@@ -88,7 +93,7 @@ int main() {
 10</code></pre>
 
     <h3>Exemplo 2: Encontrar o Fatorial de um Número</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int n = 5;
@@ -101,14 +106,15 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>O fatorial é 120</code></pre>
+    <pre><code class="language-c">O fatorial é 120</code></pre>
 
-    <h2>3. Exemplo com <code>do-while</code></h2>
-    <p>O laço <code>do-while</code> garante que o bloco de código seja executado pelo menos uma vez antes da verificação
+    <h2>3. Exemplo com do-while</h2>
+    <p>O laço <code class="tag-code-red">do-while</code> garante que o bloco de código seja executado pelo menos uma vez
+      antes da verificação
       da condição.</p>
 
     <h3>Exemplo 1: Imprimir Números de 1 a 10</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i = 1;
@@ -119,7 +125,7 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>1
+    <pre><code class="language-c">1
 2
 3
 4
@@ -131,7 +137,7 @@ int main() {
 10</code></pre>
 
     <h3>Exemplo 2: Contar de 10 a 1</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i = 10;
@@ -142,7 +148,7 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>10
+    <pre><code class="language-c">10
 9
 8
 7
@@ -157,7 +163,7 @@ int main() {
     <p>Laços de repetição podem ser aninhados para criar padrões complexos ou realizar operações em matrizes.</p>
 
     <h3>Exemplo 1: Imprimir uma Tabela de Multiplicação</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i, j;
@@ -170,7 +176,7 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>   1   2   3   4   5   6   7   8   9  10
+    <pre><code class="language-c">   1   2   3   4   5   6   7   8   9  10
    2   4   6   8  10  12  14  16  18  20
    3   6   9  12  15  18  21  24  27  30
    4   8  12  16  20  24  28  32  36  40
@@ -182,7 +188,7 @@ int main() {
   10  20  30  40  50  60  70  80  90 100</code></pre>
 
     <h3>Exemplo 2: Criar um Padrão de Estrela</h3>
-    <pre><code>#include &lt;stdio.h&gt;
+    <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main() {
     int i, j;
@@ -196,7 +202,7 @@ int main() {
     return 0;
 }</code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>*
+    <pre><code class="language-c">*
 **
 ***
 ****
@@ -204,7 +210,7 @@ int main() {
 
     <aside class="aside-note">
       <h4><i class="fas fa-sticky-note"></i>
-        Nota:
+        Nota
       </h4>
       Com estes exemplos, você tem uma compreensão prática de como usar laços de repetição em C para realizar várias
       tarefas. Esses laços são ferramentas poderosas para automatizar e simplificar a execução repetitiva de blocos de

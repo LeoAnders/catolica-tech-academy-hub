@@ -28,13 +28,13 @@
         <span class="bold">for</span>: O loop <span class="bold">for</span> é ideal para quando o número de iterações é
         conhecido antes da execução. Ele é composto por três partes: inicialização, condição e incremento/atualização.
         <p><span class="bold">Sintaxe:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 for (inicialização; condição; incremento) {
   // bloco de código
 }
               </code></pre>
         <p><span class="bold">Exemplo:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 #include <stdio.h>
 
 int main() {
@@ -46,7 +46,7 @@ int main() {
 }
               </code></pre>
         <p><span class="bold">Saída:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 Iteração 0
 Iteração 1
 Iteração 2
@@ -59,13 +59,13 @@ Iteração 4
         é conhecido e depende de uma condição ser verdadeira. O bloco de código é executado enquanto a condição for
         verdadeira.
         <p><span class="bold">Sintaxe:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 while (condição) {
   // bloco de código
 }
               </code></pre>
         <p><span class="bold">Exemplo:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 #include <stdio.h>
 
 int main() {
@@ -78,7 +78,7 @@ int main() {
 }
               </code></pre>
         <p><span class="bold">Saída:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 Iteração 0
 Iteração 1
 Iteração 2
@@ -91,13 +91,13 @@ Iteração 4
         executado pelo menos uma vez antes da verificação da condição. É útil quando você precisa garantir a execução
         inicial.
         <p><span class="bold">Sintaxe:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 do {
   // bloco de código
 } while (condição);
               </code></pre>
         <p><span class="bold">Exemplo:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 #include <stdio.h>
 
 int main() {
@@ -110,7 +110,7 @@ int main() {
 }
               </code></pre>
         <p><span class="bold">Saída:</span></p>
-        <pre><code>
+        <pre><code class="language-c">
 Iteração 0
 Iteração 1
 Iteração 2
@@ -123,7 +123,7 @@ Iteração 4
     <h3>Estruturas de Repetição Aninhadas:</h3>
     <p>Você também pode aninhar estruturas de repetição para criar loops dentro de loops.</p>
     <p><span class="bold">Exemplo:</span></p>
-    <pre><code>
+    <pre><code class="language-c">
 #include <stdio.h>
 
 int main() {
@@ -137,7 +137,7 @@ int main() {
 }
       </code></pre>
     <p><span class="bold">Saída:</span></p>
-    <pre><code>
+    <pre><code class="language-c">
 i = 0, j = 0
 i = 0, j = 1
 i = 0, j = 2
@@ -150,18 +150,19 @@ i = 2, j = 2
       </code></pre>
     <aside class="aside-idea">
       <h4><i class="fa-solid fa-lightbulb"></i>
-        Dicas Importantes:
+        Dicas Importantes
       </h4>
       <ul>
         <li><span class="bold">Controle de Fluxo</span>: Use <span class="bold">break</span> para sair de um loop e
-          <span class="bold">continue</span> para pular para a próxima iteração.</li>
+          <span class="bold">continue</span> para pular para a próxima iteração.
+        </li>
         <li><span class="bold">Evite Loops Infinitos</span>: Certifique-se de que a condição de saída do loop seja
           alcançável para evitar loops infinitos.</li>
       </ul>
     </aside>
     <h3>Veja mais sobre <span class="bold">break</span> e <span class="bold">continue</span> em nosso tópico exclusivo
       sobre Controle de Loops.</h3>
-    <pre><code>
+    <pre><code class="language-c">
 #include <stdio.h>
 
 int main() {
@@ -174,7 +175,7 @@ int main() {
       </code></pre>
     <aside class="aside-note">
       <h4><i class="fas fa-sticky-note"></i>
-        Nota:
+        Nota
       </h4>
       Com essas informações, você deve ter uma compreensão sólida das estruturas de repetição em C.
     </aside>
