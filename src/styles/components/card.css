@@ -1,0 +1,51 @@
+:root {
+  --text-light-100: rgb(234, 234, 234);
+  --text-light-200: #d7d7d7;
+  --text-red-100: #cd3d3f;
+  --color-border-grey-100: #3b3f48;
+  --color-border-red-100: #c54648;
+}
+
+section.cards-exercise {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid var(--color-border-grey-100);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: solid 1px var(--color-border-red-100);
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--text-light-200);
+  display: block;
+  height: 100%;
+}
+
+.card h4 {
+  margin: 0 0 10px;
+  transition: color 0.2s;
+  color: var(--text-red-100);
+  font-weight: 600;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card:hover h4 {
+  color: var(--text-light-100);
+}
