@@ -2,102 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variaveis e tipos de dados</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
-    <link rel="stylesheet" href="/src/styles/global.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variáveis e tipos de dados</title>
+  <!-- Links css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
+  <!-- Estilos CSS internos -->
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/components/buttons.css">
+  <link rel="stylesheet" href="/src/styles/components/aside.css">
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-        <h2>Variáveis e Tipos de Dados em C</h2>
-        <p>
-            As variáveis são espaços na memória usados para armazenar valores temporários durante a execução de um
-            programa. Para usar uma variável, é necessário declará-la especificando seu tipo de dado.
-        </p>
+    <h1>Variáveis e Tipos de Dados em C</h1>
+    <p>
+      As variáveis são espaços na memória usados para armazenar valores temporários durante a execução de um
+      programa. Para usar uma variável, é necessário declará-la especificando seu tipo de dado.
+    </p>
 
-        <h3>Declaração de Variáveis</h3>
-        <p>
-            Para declarar uma variável em C, você deve definir o tipo de dado que ela armazenará, seguido do nome da
-            variável. Exemplo:
-        </p>
-        <pre><code class="language-c">
+    <h3>Declaração de Variáveis</h3>
+    <p>
+      Para declarar uma variável em C, você deve definir o tipo de dado que ela armazenará, seguido do nome da
+      variável. Exemplo:
+    </p>
+    <pre><code class="language-c">
     int idade;
     float altura;
     char inicial;
-</code></pre>
+  </code></pre>
 
-        <p>No exemplo acima:</p>
-        <ul>
-            <li><code>idade</code> é uma variável do tipo <code>int</code> (número inteiro),</li>
-            <li><code>altura</code> é do tipo <code>float</code> (número com ponto flutuante),</li>
-            <li><code>inicial</code> é do tipo <code>char</code> (caractere único).</li>
-        </ul>
+    <p>No exemplo acima:</p>
+    <ul>
+      <li><code class="tag-code">idade</code> é uma variável do tipo <code>int</code> (número inteiro),</li>
+      <li><code class="tag-code">altura</code> é do tipo <code>float</code> (número com ponto flutuante),</li>
+      <li><code class="tag-code">inicial</code> é do tipo <code>char</code> (caractere único).</li>
+    </ul>
 
-        <h3>Tipos de Dados Primitivos em C</h3>
-        <p>Em C, os principais tipos de dados primitivos são:</p>
+    <h3>Tipos de Dados Primitivos em C</h3>
+    <p>Em C, os principais tipos de dados primitivos são:</p>
 
-        <ol>
-            <li><strong>int</strong> (inteiros):
-                <p>Armazena números inteiros, positivos ou negativos, sem decimais.</p>
-                <pre><code class="language-c">int idade = 25;</code></pre>
-            </li>
-            <li><strong>float</strong> (números de ponto flutuante):
-                <p>Usado para números decimais com menor precisão.</p>
-                <pre><code class="language-c">float altura = 1.75;</code></pre>
-            </li>
-            <li><strong>double</strong> (números de ponto flutuante com maior precisão):
-                <p>Similar ao <code>float</code>, mas com maior capacidade de precisão.</p>
-                <pre><code class="language-c">double salario = 2500.50;</code></pre>
-            </li>
-            <li><strong>char</strong> (caracteres):
-                <p>Armazena um único caractere.</p>
-                <pre><code class="language-c">char inicial = 'G';</code></pre>
-            </li>
-        </ol>
+    <ol>
+      <li><strong>int</strong> (inteiros):
+        <p>Armazena números inteiros, positivos ou negativos, sem decimais.</p>
+        <pre><code class="language-c">int idade = 25;</code></pre>
+      </li>
+      <li><strong>float</strong> (números de ponto flutuante):
+        <p>Usado para números decimais com menor precisão.</p>
+        <pre><code class="language-c">float altura = 1.75;</code></pre>
+      </li>
+      <li><strong>double</strong> (números de ponto flutuante com maior precisão):
+        <p>Similar ao <code>float</code>, mas com maior capacidade de precisão.</p>
+        <pre><code class="language-c">double salario = 2500.50;</code></pre>
+      </li>
+      <li><strong>char</strong> (caracteres):
+        <p>Armazena um único caractere.</p>
+        <pre><code class="language-c">char inicial = 'G';</code></pre>
+      </li>
+    </ol>
 
-        <h2>Operações Básicas</h2>
+    <h2>Operações Básicas</h2>
 
-        <h4>Operações Aritméticas</h4>
-        <p>Em C, você pode realizar operações matemáticas básicas, como:</p>
+    <h4>Operações Aritméticas</h4>
+    <p>Em C, você pode realizar operações matemáticas básicas, como:</p>
 
-        <ul>
-            <li><strong>Adição (+)</strong>:
-                <pre><code class="language-c">int resultado = 5 + 3;  // resultado será 8</code></pre>
-            </li>
-            <li><strong>Subtração (-)</strong>:
-                <pre><code class="language-c">int resultado = 10 - 4;  // resultado será 6</code></pre>
-            </li>
-            <li><strong>Multiplicação (*)</strong>:
-                <pre><code class="language-c">int resultado = 7 * 3;  // resultado será 21</code></pre>
-            </li>
-            <li><strong>Divisão (/)</strong>:
-                <pre><code class="language-c">float resultado = 10 / 4;  // resultado será 2.5</code></pre>
-            </li>
-            <li><strong>Módulo (%)</strong> (resto da divisão):
-                <pre><code class="language-c">int resultado = 10 % 3;  // resultado será 1</code></pre>
-            </li>
-        </ul>
+    <ul>
+      <li><strong>Adição (+)</strong>:
+        <pre><code class="language-c">int resultado = 5 + 3;  // resultado será 8</code></pre>
+      </li>
+      <li><strong>Subtração (-)</strong>:
+        <pre><code class="language-c">int resultado = 10 - 4;  // resultado será 6</code></pre>
+      </li>
+      <li><strong>Multiplicação (*)</strong>:
+        <pre><code class="language-c">int resultado = 7 * 3;  // resultado será 21</code></pre>
+      </li>
+      <li><strong>Divisão (/)</strong>:
+        <pre><code class="language-c">float resultado = 10 / 4;  // resultado será 2.5</code></pre>
+      </li>
+      <li><strong>Módulo (%)</strong> (resto da divisão):
+        <pre><code class="language-c">int resultado = 10 % 3;  // resultado será 1</code></pre>
+      </li>
+    </ul>
 
-        <h4>Operações de Incremento e Decremento</h4>
-        <ul>
-            <li><strong>Incremento (++)</strong>: aumenta o valor de uma variável em 1.
-                <pre><code class="language-c">int x = 5;
+    <h4>Operações de Incremento e Decremento</h4>
+    <ul>
+      <li><strong>Incremento (++)</strong>: aumenta o valor de uma variável em 1.
+        <pre><code class="language-c">int x = 5;
 x++;  // x agora é 6</code></pre>
-            </li>
-            <li><strong>Decremento (--)</strong>: diminui o valor de uma variável em 1.
-                <pre><code class="language-c">int y = 5;
+      </li>
+      <li><strong>Decremento (--)</strong>: diminui o valor de uma variável em 1.
+        <pre><code class="language-c">int y = 5;
 y--;  // y agora é 4</code></pre>
-            </li>
-        </ul>
-    </div>
+      </li>
+    </ul>
+  </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-    <script>hljs.highlightAll();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
 
 </body>
 
