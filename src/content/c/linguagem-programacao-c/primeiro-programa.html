@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O primeiro programa: "Hello, World!"</title>
+  <script defer src="/src/scripts/notify-sidebar.js"></script>
   <!-- Links para bibliotecas CSS externas -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -78,6 +79,21 @@ int main() {
 
     <p>Para mais informações sobre programação em C, consulte a documentação oficial ou tutoriais online.</p>
     <a class="link" href="https://www.learn-c.org/">Aprenda C aqui!</a>
+
+    <!-- Button navigation -->
+    <div class="navigation-buttons-container">
+      <a class="btn-navigation btn-previous nav-link" href="./estrutura-programa-c.html"
+        onclick="notifySidebar('estrutura-programa-c.html')">
+        <span class="btn-label">Anterior</span>
+        <span class="btn-tooltip">Estrutura básica de um programa em C</span>
+      </a>
+
+      <a class="btn-navigation btn-next nav-link" href="./compilacao-execucao-programas-c.html"
+        onclick="notifySidebar('compilacao-execucao-programas-c.html')">
+        <span class="btn-label">Próxima</span>
+        <span class="btn-tooltip">Compilação e execução de programas em C</span>
+      </a>
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>

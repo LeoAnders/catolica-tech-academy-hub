@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>História e aplicação da linguagem</title>
+  <script defer src="/src/scripts/notify-sidebar.js"></script>
   <!-- Links para bibliotecas CSS externas -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Estilos CSS internos -->
@@ -16,7 +17,7 @@
 
 <body>
   <div class="container">
-    <h1>Origem da Linguagem C</h1>
+    <h1>História e aplicação da linguagem</h1>
     <p>C foi criada no início dos anos 1970 por <span class="bold">Dennis Ritchie</span> nos Laboratórios Bell, EUA.
       A linguagem evoluiu a partir da linguagem B para criar uma ferramenta eficiente no desenvolvimento do
       sistema operacional <span class="bold">Unix</span>.</p>
@@ -60,6 +61,21 @@
         exigem alta performance.
       </p>
     </aside>
+
+    <!-- Button navigation -->
+    <div class="navigation-buttons-container">
+      <a class="btn-navigation btn-previous nav-link" href="./linguagem-c.html"
+        onclick="notifySidebar('linguagem-c.html')">
+        <span class="btn-label">Anterior</span>
+        <span class="btn-tooltip">O que é a Linguagem C</span>
+      </a>
+
+      <a class="btn-navigation btn-next nav-link" href="./estrutura-programa-c.html"
+        onclick="notifySidebar('estrutura-programa-c.html')">
+        <span class="btn-label">Próxima</span>
+        <span class="btn-tooltip">Estrutura básica de um programa em C</span>
+      </a>
+    </div>
   </div>
 </body>
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estrutura básica de um programa em C</title>
+  <script defer src="/src/scripts/notify-sidebar.js"></script>
   <!-- Links para bibliotecas CSS externas -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -70,8 +71,24 @@ int main() {
   return 0;
 }</code></pre>
     <aside class="aside-note">
+      <h4><i class="fas fa-sticky-note"></i> Nota</h4>
       <p>Este código imprime "Hello, World!" no console e retorna 0, indicando que foi executado com sucesso.</p>
     </aside>
+
+    <!-- Button navigation -->
+    <div class="navigation-buttons-container">
+      <a class="btn-navigation btn-previous nav-link" href="./historia-aplicacao-linguagem.html"
+        onclick="notifySidebar('historia-aplicacao-linguagem.html')">
+        <span class="btn-label">Anterior</span>
+        <span class="btn-tooltip">História e aplicação da linguagem</span>
+      </a>
+
+      <a class="btn-navigation btn-next nav-link" href="./primeiro-programa.html"
+        onclick="notifySidebar('primeiro-programa.html')">
+        <span class="btn-label">Próxima</span>
+        <span class="btn-tooltip">O primeiro programa: "Hello World!"</span>
+      </a>
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
