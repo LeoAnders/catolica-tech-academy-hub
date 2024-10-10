@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentação de Comandos de Entrada e Saída em C</title>
+  <script src="/src/scripts/notify-sidebar.js"></script>
   <!-- Links css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="/src/styles/components/tabela-entrada-saida.css">
   <link rel="stylesheet" href="/src/styles/components/buttons.css">
   <link rel="stylesheet" href="/src/styles/components/aside.css">
+  <link rel="stylesheet" href="/src/styles/components/code.css">
 </head>
 
 <body>
@@ -31,16 +33,16 @@
     <pre>
         <code class="language-c">
         
-        #include &lt;stdio.h&gt;
+#include &lt;stdio.h&gt;
         
-        int main() {
+int main() {
 
-            int idade = 25;
+    int idade = 25;
 
-            printf("Minha idade é %d anos\n", idade);
+    printf("Minha idade é %d anos\n", idade);
 
-            return 0;
-        }
+    return 0;
+}
         </code>
     </pre>
 
@@ -183,6 +185,21 @@ int main() {
 
     <h4>Saída:</h4>
     <pre><code class="language-c">Nome: Gabriel</code></pre>
+  </div>
+
+
+  <div class="navigation-buttons-container">
+    <a class="btn-navigation btn-previous" href="./variaveis-e-tipos-de-dados.html"
+      onclick="notifySidebar('variaveis-e-tipos-de-dados.html')">
+      <span class="btn-label">Anterior</span>
+      <span class="btn-tooltip">Variáveis e tipos de dados</span>
+    </a>
+
+  <a class="btn-navigation btn-next nav-link" href="../condicionais/estruturas-condicionais.html"
+        onclick="notifySidebar('estruturas-condicionais.html')">
+        <span class="btn-label">Próxima</span>
+        <span class="btn-tooltip">Estruturas condicionais: if, else, else if</span>
+      </a>
   </div>
 
 
