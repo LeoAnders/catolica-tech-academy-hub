@@ -21,15 +21,20 @@
   <h1>Exemplo de Uso em C</h1>
 
   <h2>Um exemplo simples de uso das estruturas condicionais com operadores relacionais e lógicos em C</h2>
-  <pre><code class="language-c">
-int temperature = 30;
+  <pre><code class="language-c">#include &lt;stdio.h&gt;
 
-if (temperature > 35) {
-    printf("E um dia quente.\n");
-} else if (temperature >= 25 && temperature <= 35) {
-    printf("E um dia agradavel.\n");
-} else {
-    printf("E um dia frio.\n");
+int main() {
+  
+ int temperature = 30;
+
+ if (temperature > 35) {
+     printf("E um dia quente.\n");
+ } else if (temperature >= 25 && temperature <= 35) {
+     printf("E um dia agradavel.\n");
+ } else {
+     printf("E um dia frio.\n");
+ }
+
 }
 			</code></pre>
   <aside class="aside-idea">
@@ -43,9 +48,26 @@ if (temperature > 35) {
       </li>
     </ul>
   </aside>
+  <p><strong>Saída:</strong></p>
+      <pre><code class="language-c">E um dia agradavel</code></pre>
+
   <h2>Explicação</h2>
   <p>Neste exemplo, o programa decide que mensagem exibir com base na temperatura informada.</p>
 
+  <!-- Button navigation -->
+  <div class="navigation-buttons-container">
+    <a class="btn-navigation btn-previous nav-link" href="./aninhamento-condicionais.html"
+      onclick="notifySidebar('aninhamento-condicionais.html')">
+      <span class="btn-label">Anterior</span>
+      <span class="btn-tooltip">Aninhamento de condicionais</span>
+    </a>
+
+    <a class="btn-navigation btn-next nav-link" href="./exercicios-praticos.html"
+      onclick="notifySidebar('exercicios-praticos.html')">
+      <span class="btn-label">Próxima</span>
+      <span class="btn-tooltip">Exercícios práticos de condicionais</span>
+    </a>
+  </div>
 
 
   </div>
