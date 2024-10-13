@@ -122,7 +122,7 @@ git push origin nome-da-branch
 ```
 /catolica-tech-academy-hub
 │
-├── home.html                                  # Página inicial do site
+├── index.html                                 # Página inicial do site
 ├── src/                                       # Fonte do projeto
 │   ├── content/                               # Conteúdo do site
 │   │   ├── c/                                 # Seção específica para a linguagem C
